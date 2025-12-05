@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD" id="erd">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- USER -->
+        <mxCell id="user" value="USER&#xa;─────────────&#xa;PK user_id&#xa;email&#xa;user_name&#xa;created_at&#xa;updated_at" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="140" height="120" as="geometry" />
+        </mxCell>
+        <!-- FOLDER -->
+        <mxCell id="folder" value="FOLDER&#xa;─────────────&#xa;PK folder_id&#xa;FK user_id&#xa;name&#xa;word_count" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="140" height="110" as="geometry" />
+        </mxCell>
+        <!-- WORD_LIST -->
+        <mxCell id="wordlist" value="WORD_LIST&#xa;─────────────&#xa;PK word_list_id&#xa;FK user_id&#xa;FK folder_id&#xa;FK word_id&#xa;status&#xa;easiness&#xa;repetition&#xa;interval&#xa;next_review" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="240" y="220" width="140" height="190" as="geometry" />
+        </mxCell>
+        <!-- WORD -->
+        <mxCell id="word" value="WORD&#xa;─────────────&#xa;PK word_id&#xa;FK topic_id&#xa;word&#xa;pronunciation_us&#xa;pronunciation_uk&#xa;parts_of_speech&#xa;link_image" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="440" y="80" width="150" height="160" as="geometry" />
+        </mxCell>
+        <!-- TOPIC -->
+        <mxCell id="topic" value="TOPIC&#xa;─────────────&#xa;PK topic_id&#xa;FK group_id&#xa;label&#xa;total_words" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="140" height="110" as="geometry" />
+        </mxCell>
+        <!-- GROUP -->
+        <mxCell id="group" value="GROUP&#xa;─────────────&#xa;PK group_id&#xa;label&#xa;total_words&#xa;image" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="140" height="110" as="geometry" />
+        </mxCell>
+        <!-- DICTATION_TOPIC -->
+        <mxCell id="dictation" value="DICTATION_TOPIC&#xa;─────────────&#xa;PK topic_id&#xa;topic_name&#xa;levels&#xa;sentences" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="440" y="300" width="150" height="110" as="geometry" />
+        </mxCell>
+        <!-- DICTATION_PROGRESS -->
+        <mxCell id="progress" value="DICTATION_PROGRESS&#xa;─────────────&#xa;PK progress_id&#xa;FK user_id&#xa;FK topic_id&#xa;sentence_index&#xa;level_name" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="440" y="460" width="150" height="130" as="geometry" />
+        </mxCell>
+        <!-- CHAT_MESSAGE -->
+        <mxCell id="chat" value="CHAT_MESSAGE&#xa;─────────────&#xa;PK message_id&#xa;FK user_id&#xa;role&#xa;content&#xa;metadata&#xa;timestamp" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=8;verticalAlign=top;spacingTop=4" vertex="1" parent="1">
+          <mxGeometry x="640" y="300" width="140" height="140" as="geometry" />
+        </mxCell>
+        <!-- Relationships -->
+        <mxCell id="r1" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="user" target="folder">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="folder" target="wordlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="word" target="wordlist">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="topic" target="word">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="group" target="topic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="user" target="chat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="user" target="progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" style="endArrow=ERmany;startArrow=ERone;endFill=0;startFill=0" edge="1" parent="1" source="dictation" target="progress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
