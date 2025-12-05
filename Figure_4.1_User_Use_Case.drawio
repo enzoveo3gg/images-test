@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="5.0" version="21.0.0" type="device">
+  <diagram name="User Use Case" id="user-use-case">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- System Boundary -->
+        <mxCell id="system" value="eVibe English Application" style="shape=umlFrame;whiteSpace=wrap;html=1;width=180;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="720" height="720" as="geometry" />
+        </mxCell>
+        <!-- Actor: User -->
+        <mxCell id="actor-user" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="50" height="80" as="geometry" />
+        </mxCell>
+        <!-- UC1: Login -->
+        <mxCell id="uc1" value="Login / Register" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC2: Browse Dictionary -->
+        <mxCell id="uc2" value="Browse Dictionary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="170" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC2.1: Search Words -->
+        <mxCell id="uc2-1" value="Search Words" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC2.2: View Word Details -->
+        <mxCell id="uc2-2" value="View Word Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC2.3: Browse Topics -->
+        <mxCell id="uc2-3" value="Browse Topics" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="150" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC3: Create Folders -->
+        <mxCell id="uc3" value="Create / Manage Folders" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="260" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC3.1: Add Words to Folder -->
+        <mxCell id="uc3-1" value="Add Words to Folder" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="250" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC3.2: View Folder Details -->
+        <mxCell id="uc3-2" value="View Folder Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="250" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC4: Review Flashcards -->
+        <mxCell id="uc4" value="Review Flashcards" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="350" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC4.1: Spaced Repetition -->
+        <mxCell id="uc4-1" value="Spaced Repetition&#xa;(SM-2 Algorithm)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="320" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC4.2: Game Engine -->
+        <mxCell id="uc4-2" value="Game Engine&#xa;(Multiple Choice, Fill)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="380" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC4.3: View Summary -->
+        <mxCell id="uc4-3" value="View Review Summary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="120" height="50" as="geometry" />
+        </mxCell>  
+      <!-- UC5: Practice Listening (Dictation) -->
+        <mxCell id="uc5" value="Practice Listening&#xa;(Dictation)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="450" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC5.1: Select Topic/Level -->
+        <mxCell id="uc5-1" value="Select Topic &amp; Level" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="450" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC5.2: Listen & Type -->
+        <mxCell id="uc5-2" value="Listen &amp; Type&#xa;Sentences" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="450" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC6: Assess Pronunciation -->
+        <mxCell id="uc6" value="Assess Pronunciation" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="540" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC6.1: Record Voice -->
+        <mxCell id="uc6-1" value="Record Voice" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="450" y="520" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC6.2: View Score -->
+        <mxCell id="uc6-2" value="View Pronunciation&#xa;Score &amp; Feedback" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="520" width="120" height="50" as="geometry" />
+        </mxCell>
+        <!-- UC7: View Statistics -->
+        <mxCell id="uc7" value="View Learning&#xa;Statistics" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="250" y="630" width="140" height="60" as="geometry" />
+        </mxCell>
+        <!-- UC8: Chat with AI -->
+        <mxCell id="uc8" value="Chat with AI&#xa;(Chatbot)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="450" y="630" width="140" height="60" as="geometry" />
+        </mxCell>        <!
+-- Connections: User to Main Use Cases -->
+        <mxCell id="conn1" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn2" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn3" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn4" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn5" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn6" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn7" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn8" style="edgeStyle=none;html=1;endArrow=none;strokeWidth=1.5" edge="1" parent="1" source="actor-user" target="uc8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Include relationships (dashed arrows) -->
+        <mxCell id="inc2-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc2" target="uc2-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc2" target="uc2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc2-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc2" target="uc2-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc3" target="uc3-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc3-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc3" target="uc3-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>    
+    <mxCell id="inc4-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc4" target="uc4-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc4" target="uc4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc4-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc4" target="uc4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc5-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc5" target="uc5-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc5-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc5" target="uc5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc6-1" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc6" target="uc6-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inc6-2" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;dashed=1;endArrow=open;endSize=8;strokeWidth=1" edge="1" parent="1" source="uc6" target="uc6-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
