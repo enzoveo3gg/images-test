@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+
+' --- Style rectangle instead of ellipse ---
+skinparam usecase {
+  BorderColor black
+  BackgroundColor white
+  RoundCorner 0
+}
+
+skinparam ArrowColor black
+skinparam ArrowThickness 1.5
+
+actor Admin
+
+rectangle "Login" as UC_Login
+
+rectangle "Manage Dictionary\nData" as UC_Dict
+rectangle "CRUD\nGroup/Topic/Word" as UC_Dict_CRUD
+
+rectangle "Manage Dictation\nData" as UC_Dictation
+rectangle "CRUD\nTopic/Level/Content" as UC_Dictation_CRUD
+
+' --- Links ---
+Admin --> UC_Login
+Admin --> UC_Dict
+Admin --> UC_Dictation
+
+UC_Dict --> UC_Dict_CRUD
+UC_Dictation --> UC_Dictation_CRUD
+
+@enduml
